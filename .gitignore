@@ -5,6 +5,7 @@
 !.gitignore
 !/nvim/
 !/i3/
+!/t2ec/
 !/tint2/
 !/MyScript/
 !/electron-ssr/
