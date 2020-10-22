@@ -1,0 +1,6 @@
+#/bin/bash
+xrandr --listmonitors | read a b
+if test $b==2
+then
+  /home/ljx/.screenlayout/two.sh
+fi

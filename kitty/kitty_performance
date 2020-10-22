@@ -1,0 +1,4 @@
+sync_to_monitor yes
+enable_audio_bell no
+visual_bell_duration 0.0
+bell_on_tab no

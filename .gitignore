@@ -1,0 +1,16 @@
+/*
+/*/
+
+!.gitignore
+!/nvim/
+!/i3/
+!/tint2/
+!/MyScript/
+!/electron-ssr/
+!/fcitx5/
+!/picom/
+!/ranger/
+!/zathura/
+!/alacritty/
+!/kitty/
+!/libinput-gestures.conf

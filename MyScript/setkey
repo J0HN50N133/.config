@@ -1,0 +1,2 @@
+#!/bin/bash
+setxkbmap -option caps:swapescape && notify-send 'CapsLock和Esc已交换'

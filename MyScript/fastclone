@@ -1,0 +1,4 @@
+#! /bin/zsh
+fastgit=`echo ${1/github.com/hub.fastgit.org}`
+
+git clone $fastgit
