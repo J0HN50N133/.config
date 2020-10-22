@@ -1,5 +1,6 @@
 /*
 /*/
+/electron-ssr/GPUCache/
 
 !.gitignore
 !/nvim/
