@@ -190,7 +190,7 @@
 			"remarks_base64": "44CQVHVubmVsX0HjgJHpppnmuK8gIFZJUCAzIC0gSEtU",
 			"server": "n23.boom.party",
 			"server_port": 11000,
-			"checked": true
+			"checked": false
 		},
 		{
 			"enable": true,
@@ -398,7 +398,7 @@
 			"remarks_base64": "44CQVHVubmVsX0LjgJHpppnmuK8gIFZJUCBDIC0gQXp1cmU",
 			"server": "n43.boom.party",
 			"server_port": 24000,
-			"checked": false
+			"checked": true
 		},
 		{
 			"enable": true,
@@ -2689,7 +2689,7 @@
 			"checked": false
 		}
 	],
-	"index": 10,
+	"index": 25,
 	"enable": true,
 	"autoLaunch": false,
 	"shareOverLan": false,

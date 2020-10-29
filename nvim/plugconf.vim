@@ -1,25 +1,3 @@
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" _____                                _   _             "
-"| ____|__ _ ___ _   _ _ __ ___   ___ | |_(_) ___  _ __  "
-"|  _| / _` / __| | | | '_ ` _ \ / _ \| __| |/ _ \| '_ \ "
-"| |__| (_| \__ \ |_| | | | | | | (_) | |_| | (_) | | | |"
-"|_____\__,_|___/\__, |_| |_| |_|\___/ \__|_|\___/|_| |_|"
-"                |___/                                   "
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:EasyMotion_do_mapping = 0
-" Turn on case-insensitive feature
-let g:EasyMotion_smartcase = 1
-nmap s <Plug>(easymotion-overwin-f)
-nmap s <Plug>(easymotion-overwin-f2)
-map <Leader>j <Plug>(easymotion-j)
-map <Leader>k <Plug>(easymotion-k)
-map <Leader>l <Plug>(easymotion-lineforward)
-map <Leader>h <Plug>(easymotion-linebackward)
-map <Leader>w <Plug>(easymotion-w)
-map <Leader>b <Plug>(easymotion-b)
-map <Leader>e <Plug>(easymotion-e)
-map <Leader>f <Plug>(easymotion-f)
-
 """""""""""""""""""""""""""""""""""""""""""""""""
 "             _             _                   "
 "  __ _ _   _| |_ ___ _ __ | |_ __ _  __ _ ___  "
@@ -134,8 +112,29 @@ hi! SpellRare gui=undercurl guisp=magenta
 "|_| |_|\___/ \__,_|\__|\__\___|_|  |_| |_| |_|"
 """"""""""""""""""""""""""""""""""""""""""""""""
                                               
+
 let g:floaterm_keymap_new = '<leader>sn'
 let g:floaterm_keymap_kill = '<leader>sk'
 let g:floaterm_keymap_toggle = '<leader>st'
 noremap <leader>sr :FloatermNew ranger $PWD<CR>
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"                                      _   _             
+"  ___  __ _ ___ _   _ _ __ ___   ___ | |_(_) ___  _ __  
+" / _ \/ _` / __| | | | '_ ` _ \ / _ \| __| |/ _ \| '_ \ 
+"|  __/ (_| \__ \ |_| | | | | | | (_) | |_| | (_) | | | |
+" \___|\__,_|___/\__, |_| |_| |_|\___/ \__|_|\___/|_| |_|
+"                |___/                                   
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:EasyMotion_do_mapping = 0 " Disable default mappings
+let g:EasyMotion_smartcase = 1
+nmap <Leader>ef <Plug>(easymotion-bd-f)
+nmap <Leader>ef <Plug>(easymotion-overwin-f)
+nmap <Leader>es <Plug>(easymotion-overwin-f2)
+nmap <Leader>el <Plug>(easymotion-lineforward)
+nmap <Leader>ej <Plug>(easymotion-j)
+nmap <Leader>ek <Plug>(easymotion-k)
+nmap <Leader>eh <Plug>(easymotion-linebackward)
+nmap <Leader>ew <Plug>(easymotion-w)
+nmap <Leader>eb <Plug>(easymotion-b)
+nmap <Leader>ee <Plug>(easymotion-e)

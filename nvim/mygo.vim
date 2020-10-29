@@ -30,7 +30,7 @@ let g:go_highlight_variable_declarations = 1
 let g:go_doc_keywordprg_enabled = 0
 let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck']
 let g:go_metalinter_autosave = 1
-let g:go_metalinter_autosave_enabled = ['vet', 'golint']
+let g:go_metalinter_autosave_enabled = ['golint', 'errcheck']
 let g:go_metalinter_deadline = "5s"
 
 autocmd FileType go nmap <Leader>gb <Plug>(go-build)

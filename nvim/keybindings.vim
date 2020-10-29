@@ -92,7 +92,7 @@ noremap <up> <c-w>+
 noremap <down> <c-w>-
 noremap <left> <c-w><
 noremap <right> <c-w>>
-"Fast saving
+
 map f <Plug>Sneak_s
 map F <Plug>Sneak_S
 map t <Plug>Sneak_t
@@ -105,3 +105,86 @@ noremap <silent> <c-b> :call smooth_scroll#up(&scroll*2, 0, 4)<CR>
 noremap <silent> <c-f> :call smooth_scroll#down(&scroll*2, 0, 4)<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+"""""""""""""""""""
+"  ____           "
+" / ___|___   ___ "
+"| |   / _ \ / __|"
+"| |__| (_) | (__ "
+" \____\___/ \___|"
+"""""""""""""""""""
+
+" coc-translator
+" popup
+nmap <Leader>tt <Plug>(coc-translator-p)
+vmap <Leader>tt <Plug>(coc-translator-pv)
+" echo
+nmap <Leader>te <Plug>(coc-translator-e)
+vmap <Leader>te <Plug>(coc-translator-ev)
+" replace
+nmap <Leader>tr <Plug>(coc-translator-r)
+vmap <Leader>tr <Plug>(coc-translator-rv)
+
+nmap <silent> <leader>- <Plug>(coc-diagnostic-prev)
+nmap <silent> <leader>+ <Plug>(coc-diagnostic-next)
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
+nmap <silent> rn <Plug>(coc-rename)
+
+"" compile and run
+noremap <leader>r :call CompileRun()<CR>
+func! CompileRun()
+exec "w"
+set splitbelow
+if &filetype == 'c'
+  :AsyncRun gcc % -o %<&& time ./%<
+elseif &filetype == 'cpp'
+  :AsyncRun -mode=term -focus=0 g++ -O3 "%" -Wall -o "%<" -lpthread && time ./"%<"
+elseif &filetype == 'java'
+  :AsyncRun javac "%" && time java "%"
+elseif &filetype == 'sh'
+  :AsyncRun time bash "%"
+elseif &filetype == 'python'
+  :AsyncRun -mode=term -focus=0 python3 %
+elseif &filetype == 'html'
+  :AsyncRun -mode=bang google-chrome-stable %
+  "silent! exec "!" google-chrome stable "%"
+elseif &filetype == 'go'
+  :AsyncRun -mode=term -focus=0 go run %
+endif
+endfunc
+
+""""""""""""""""""""""""
+"           _          "
+" _ __ ___ (_)___  ___ "
+"| '_ ` _ \| / __|/ __|"
+"| | | | | | \__ \ (__ "
+"|_| |_| |_|_|___/\___|"
+"                      "
+""""""""""""""""""""""""
+
+nmap <silent><Leader>; /<++><CR>:nohlsearch<CR>ca<
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"                                      _   _             
+"  ___  __ _ ___ _   _ _ __ ___   ___ | |_(_) ___  _ __  
+" / _ \/ _` / __| | | | '_ ` _ \ / _ \| __| |/ _ \| '_ \ 
+"|  __/ (_| \__ \ |_| | | | | | | (_) | |_| | (_) | | | |
+" \___|\__,_|___/\__, |_| |_| |_|\___/ \__|_|\___/|_| |_|
+"                |___/                                   
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:EasyMotion_do_mapping = 0 " Disable default mappings
+let g:EasyMotion_smartcase = 1
+nmap <Leader>ef <Plug>(easymotion-bd-f)
+nmap <Leader>ef <Plug>(easymotion-overwin-f)
+nmap <Leader>es <Plug>(easymotion-overwin-f2)
+nmap <Leader>el <Plug>(easymotion-lineforward)
+nmap <Leader>ej <Plug>(easymotion-j)
+nmap <Leader>ek <Plug>(easymotion-k)
+nmap <Leader>eh <Plug>(easymotion-linebackward)
+nmap <Leader>ew <Plug>(easymotion-w)
+nmap <Leader>eb <Plug>(easymotion-b)
+nmap <Leader>ee <Plug>(easymotion-e)
+

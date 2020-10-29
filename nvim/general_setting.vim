@@ -51,4 +51,4 @@ endif
 "                      "
 """"""""""""""""""""""""
 
-nnoremap <silent><LEADER><LEADER> /<++><CR>:nohlsearch<CR>ca<
+nnoremap <silent><Leader><Leader> /<++><CR>:nohlsearch<CR>ca<
