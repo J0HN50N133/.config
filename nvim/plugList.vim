@@ -7,13 +7,13 @@ Plug 'junegunn/vim-easy-align'
 Plug 'https://hub.fastgit.org/junegunn/goyo.vim',{'on':'Goyo'}
 Plug 'https://hub.fastgit.org/easymotion/vim-easymotion'
 Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
-"Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'}
-"Plug 'jistr/vim-nerdtree-tabs'
 Plug 'tpope/vim-surround'
 Plug 'voldikss/vim-floaterm'
 Plug 'justinmk/vim-sneak'
 Plug 'preservim/nerdcommenter'
 Plug 'ludovicchabant/vim-gutentags'
+Plug 'skywind3000/gutentags_plus'
+Plug 'skywind3000/vim-preview'
 Plug 'jiangmiao/auto-pairs'
 Plug 'roxma/nvim-yarp'
 Plug 'https://hub.fastgit.org/ervandew/supertab'
@@ -49,6 +49,8 @@ Plug 'dense-analysis/ale'
 Plug 'https://hub.fastgit.org/theniceboy/vim-deus'
 "Plug 'https://hub.fastgit.org/tomasr/molokai'
 
+Plug 'https://hub.fastgit.org/ianding1/leetcode.vim',{'on':['LeetCodeList','LeetCodeSignIn']}
+Plug 'https://hub.fastgit.org/liuchengxu/vista.vim'
 call plug#end()
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

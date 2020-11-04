@@ -21,7 +21,7 @@ let g:go_highlight_generate_tags = 1
 let g:go_highlight_methods = 1
 let g:go_highlight_operators = 1
 let g:go_highlight_space_tab_error = 1
-let g:go_highlight_string_spellcheck = 1
+"let g:go_highlight_string_spellcheck = 1
 let g:go_highlight_structs = 1
 let g:go_highlight_trailing_whitespace_error = 1
 let g:go_highlight_types = 1
@@ -30,7 +30,7 @@ let g:go_highlight_variable_declarations = 1
 let g:go_doc_keywordprg_enabled = 0
 let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck']
 let g:go_metalinter_autosave = 1
-let g:go_metalinter_autosave_enabled = ['golint', 'errcheck']
+"let g:go_metalinter_autosave_enabled = ['golint', 'errcheck']
 let g:go_metalinter_deadline = "5s"
 
 autocmd FileType go nmap <Leader>gb <Plug>(go-build)

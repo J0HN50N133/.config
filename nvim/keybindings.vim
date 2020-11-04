@@ -130,8 +130,10 @@ nmap <silent> <leader>+ <Plug>(coc-diagnostic-next)
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
-nmap <silent> gr <Plug>(coc-references)
+nmap <silent> <Leader>gr <Plug>(coc-references)
 nmap <silent> rn <Plug>(coc-rename)
+" Search workspace symbols.
+nnoremap <silent><nowait> <space>s  :<C-u>CocList -I symbols<cr>
 
 "" compile and run
 noremap <leader>r :call CompileRun()<CR>
@@ -166,6 +168,7 @@ endfunc
 """"""""""""""""""""""""
 
 nmap <silent><Leader>; /<++><CR>:nohlsearch<CR>ca<
+nmap <F2> :Vista!!<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                                      _   _             
@@ -177,14 +180,14 @@ nmap <silent><Leader>; /<++><CR>:nohlsearch<CR>ca<
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:EasyMotion_do_mapping = 0 " Disable default mappings
 let g:EasyMotion_smartcase = 1
-nmap <Leader>ef <Plug>(easymotion-bd-f)
-nmap <Leader>ef <Plug>(easymotion-overwin-f)
-nmap <Leader>es <Plug>(easymotion-overwin-f2)
-nmap <Leader>el <Plug>(easymotion-lineforward)
-nmap <Leader>ej <Plug>(easymotion-j)
-nmap <Leader>ek <Plug>(easymotion-k)
-nmap <Leader>eh <Plug>(easymotion-linebackward)
-nmap <Leader>ew <Plug>(easymotion-w)
-nmap <Leader>eb <Plug>(easymotion-b)
-nmap <Leader>ee <Plug>(easymotion-e)
-
+" j for jump
+nmap <Leader>jf <Plug>(easymotion-bd-f)
+nmap <Leader>jf <Plug>(easymotion-overwin-f)
+nmap <Leader>js <Plug>(easymotion-overwin-f2)
+nmap <Leader>jl <Plug>(easymotion-lineforward)
+nmap <Leader>jj <Plug>(easymotion-j)
+nmap <Leader>jk <Plug>(easymotion-k)
+nmap <Leader>jh <Plug>(easymotion-linebackward)
+nmap <Leader>jw <Plug>(easymotion-w)
+"nmap <Leader>jb <Plug>(easymotion-b)
+nmap <Leader>je <Plug>(easymotion-e)
