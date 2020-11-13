@@ -1,6 +1,14 @@
 /*
 /*/
 /electron-ssr/GPUCache/
+/nvim/after
+/nvim/autoload
+/nvim/colors
+/nvim/ftplugin
+/nvim/plugged
+/nvim/sessions
+/nvim/syntax
+
 
 !.gitignore
 !/nvim/

@@ -48,5 +48,26 @@
                 "--clang-tidy",
                 "--suggest-missing-includes",
                 "--header-insertion=iwyu"
-        ]
+        ],
+        "go.goplsOptions": {
+                "completeUnimported": true,
+                "gofumpt": true
+        },
+        "languageserver": {
+                "golang": {
+                        "command": "gopls",
+                        "rootPatterns": [
+                                "go.mod",
+                                ".vim/",
+                                ".git/",
+                                ".hg/"
+                        ],
+                        "filetypes": [
+                                "go"
+                        ],
+                        "initializationOptions": {
+                                "usePlaceholders": true
+                        }
+                }
+        }
 }

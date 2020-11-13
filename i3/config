@@ -89,8 +89,8 @@ bindsym $mod+Shift+s exec --no-startup-id ~/MyBin/Appimage/electron-ssr-0.2.5.Ap
 #bindcode 193 exec clion
 #start vscode
 bindsym $mod+c exec --no-startup-id code
-#start thunar
-bindsym $mod+t exec --no-startup-id thunar
+#start nemo
+bindsym $mod+t exec --no-startup-id nemo
 # kill focused window
 bindsym $mod+Shift+q kill
 

@@ -82,9 +82,7 @@ function! s:defx_my_settings() abort
 endfunction
 nmap <F5> :source ~/.config/nvim/init.vim<CR>
 nmap W :w<CR>
-nmap <CR> o<Esc>
 noremap Q :q!<CR>
-noremap <leader>q :q!<CR>
 noremap gt :bn<CR> 
 noremap gT :bp<CR>
 noremap gP :b#<CR> 
@@ -127,11 +125,11 @@ vmap <Leader>tr <Plug>(coc-translator-rv)
 
 nmap <silent> <leader>- <Plug>(coc-diagnostic-prev)
 nmap <silent> <leader>+ <Plug>(coc-diagnostic-next)
-nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> gy <Plug>(coc-type-definition)
-nmap <silent> gi <Plug>(coc-implementation)
-nmap <silent> <Leader>gr <Plug>(coc-references)
-nmap <silent> rn <Plug>(coc-rename)
+nmap <silent> <leader>cd <Plug>(coc-definition)
+nmap <silent> <leader>ct <Plug>(coc-type-definition)
+nmap <silent> <leader>ci <Plug>(coc-implementation)
+nmap <silent> <leader>cr <Plug>(coc-references)
+nmap <silent> <leader>cn <Plug>(coc-rename)
 " Search workspace symbols.
 nnoremap <silent><nowait> <space>s  :<C-u>CocList -I symbols<cr>
 
@@ -189,5 +187,8 @@ nmap <Leader>jj <Plug>(easymotion-j)
 nmap <Leader>jk <Plug>(easymotion-k)
 nmap <Leader>jh <Plug>(easymotion-linebackward)
 nmap <Leader>jw <Plug>(easymotion-w)
-"nmap <Leader>jb <Plug>(easymotion-b)
+nmap <Leader>jb <Plug>(easymotion-b)
 nmap <Leader>je <Plug>(easymotion-e)
+
+
+""" wildfire """

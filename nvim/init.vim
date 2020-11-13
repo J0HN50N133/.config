@@ -5,10 +5,8 @@
 """"""| |  | | | |    \ V /  | || |  | |
 """"""|_|  |_| |_|     \_/  |___|_|  |_|
 """"""
-set runtimepath^=~/.vim runtimepath+=~/.vim/after
+set runtimepath^=~/.config/nvim runtimepath+=~/.config/nvim/after
 let &packpath = &runtimepath
-let $GTAGSLABEL = 'native-pygments'
-let $GTAGSCONF = '/usr/share/gtags/gtags.conf'
 source ~/.config/nvim/general_setting.vim
 source ~/.config/nvim/apperance.vim
 source ~/.config/nvim/plugList.vim

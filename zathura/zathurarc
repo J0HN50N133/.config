@@ -1,3 +1,7 @@
+set statusbar-h-padding 0
+set statusbar-v-padding 0
+set page-padding 0
+
 set notification-error-bg       "#fbf1c7" # bg
 set notification-error-fg       "#9d0006" # bright:red
 set notification-warning-bg     "#fbf1c7" # bg
@@ -46,5 +50,6 @@ map r reload
 map R rotate
 map K zoom out
 map J zoom in
+map i recolor
 map <c-20> zoom in
 map <c-21> zoom in

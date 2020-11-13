@@ -30,7 +30,7 @@ let g:go_highlight_variable_declarations = 1
 let g:go_doc_keywordprg_enabled = 0
 let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck']
 let g:go_metalinter_autosave = 1
-"let g:go_metalinter_autosave_enabled = ['golint', 'errcheck']
+let g:go_metalinter_autosave_enabled = ['golint', 'errcheck']
 let g:go_metalinter_deadline = "5s"
 
 autocmd FileType go nmap <Leader>gb <Plug>(go-build)
@@ -38,7 +38,8 @@ autocmd FileType go nmap <Leader>gt <Plug>(go-test)
 autocmd FileType go nmap <Leader>+ :cnext<cr>
 autocmd FileType go nmap <Leader>- :cprevious<cr>
 autocmd FileType go nmap <Leader>c <Plug>(go-coverage-toggle)
-autocmd BufWritePre *.go :call CocAction('organizeImport')
+autocmd BufWritePre *.go :call CocAction('runCommand', 'editor.action.organizeImport')
+"autocmd BufWritePre *.go :call CocAction('organizeImport') 会引起卡死
 "autocmd FileType go nmap gtj :CocCommand go.tags.add json<cr>
 "autocmd FileType go nmap gty :CocCommand go.tags.add yaml<cr>
 "autocmd FileType go nmap gtx :CocCommand go.tags.clear<cr>

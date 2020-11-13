@@ -1,56 +1,58 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Plug
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/.config/nvim/plugged')
 "Tool
-Plug 'junegunn/vim-easy-align'
+Plug 'https://hub.fastgit.org/junegunn/vim-easy-align'
 Plug 'https://hub.fastgit.org/junegunn/goyo.vim',{'on':'Goyo'}
 Plug 'https://hub.fastgit.org/easymotion/vim-easymotion'
-Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
-Plug 'tpope/vim-surround'
-Plug 'voldikss/vim-floaterm'
-Plug 'justinmk/vim-sneak'
-Plug 'preservim/nerdcommenter'
-Plug 'ludovicchabant/vim-gutentags'
-Plug 'skywind3000/gutentags_plus'
-Plug 'skywind3000/vim-preview'
-Plug 'jiangmiao/auto-pairs'
-Plug 'roxma/nvim-yarp'
+Plug 'https://hub.fastgit.org/SirVer/ultisnips' | Plug 'https://hub.fastgit.org/honza/vim-snippets'
+Plug 'https://hub.fastgit.org/tpope/vim-surround'
+Plug 'https://hub.fastgit.org/voldikss/vim-floaterm'
+Plug 'https://hub.fastgit.org/justinmk/vim-sneak'
+Plug 'https://hub.fastgit.org/preservim/nerdcommenter'
+Plug 'https://hub.fastgit.org/ludovicchabant/vim-gutentags'
+Plug 'https://hub.fastgit.org/skywind3000/gutentags_plus'
+Plug 'https://hub.fastgit.org/skywind3000/vim-preview'
+Plug 'https://hub.fastgit.org/jiangmiao/auto-pairs'
+Plug 'https://hub.fastgit.org/roxma/nvim-yarp'
 Plug 'https://hub.fastgit.org/ervandew/supertab'
 Plug 'https://hub.fastgit.org/Shougo/defx.nvim',{'do':':UpdateRemotePlugins'}
+Plug 'https://hub.fastgit.org/gcmt/wildfire.vim'
 
 "highlight
-Plug 'sheerun/vim-polyglot'
+Plug 'https://hub.fastgit.org/sheerun/vim-polyglot'
 
 """"""""""""""""""Plug-For-language""""""""""""""""""""""
 "Auto complete
 Plug 'https://hub.fastgit.org/neoclide/coc.nvim',{'branch':'release'}
 
-Plug 'tpope/vim-markdown', {'for': 'markdown'}
-Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
-Plug 'lervag/vimtex',{'on': 'NERDTreeToggle'}
+Plug 'https://hub.fastgit.org/tpope/vim-markdown', {'for': 'markdown'}
+Plug 'https://hub.fastgit.org/suan/vim-instant-markdown', {'for': 'markdown'}
+Plug 'https://hub.fastgit.org/lervag/vimtex',{'on': 'NERDTreeToggle'}
 
-Plug 'fatih/vim-go',{'for':'go'}
-Plug 'vim-jp/vim-go-extra',{'for':'go'}
-Plug 'nsf/gocode', { 'rtp': 'vim', 'do': '~/.vim/plugged/gocode/vim/symlink.sh'  }
+Plug 'https://hub.fastgit.org/fatih/vim-go',{'for':'go'}
+Plug 'https://hub.fastgit.org/vim-jp/vim-go-extra',{'for':'go'}
+Plug 'https://hub.fastgit.org/nsf/gocode', { 'rtp': 'vim', 'do': '~/.vim/plugged/gocode/vim/symlink.sh'  }
 Plug 'https://hub.fastgit.org/AndrewRadev/splitjoin.vim'
 Plug 'https://hub.fastgit.org/ctrlpvim/ctrlp.vim'
 
 " skirt
-Plug 'terryma/vim-smooth-scroll'
-"Plug 'joshdick/onedark.vim'
-Plug 'vim-airline/vim-airline'
+Plug 'https://hub.fastgit.org/terryma/vim-smooth-scroll'
+"Plug 'https://hub.fastgit.org/joshdick/onedark.vim'
+Plug 'https://hub.fastgit.org/vim-airline/vim-airline'
 Plug 'https://hub.fastgit.org/vim-airline/vim-airline-themes'
 Plug 'https://hub.fastgit.org/itchyny/vim-cursorword'
-Plug 'frazrepo/vim-rainbow'
+Plug 'https://hub.fastgit.org/frazrepo/vim-rainbow'
 "Plug 'arcticicestudio/nord-vim'
-Plug 'skywind3000/asyncrun.vim'
-Plug 'dense-analysis/ale'
+Plug 'https://hub.fastgit.org/skywind3000/asyncrun.vim'
+Plug 'https://hub.fastgit.org/dense-analysis/ale'
 Plug 'https://hub.fastgit.org/theniceboy/vim-deus'
 "Plug 'https://hub.fastgit.org/tomasr/molokai'
 
 Plug 'https://hub.fastgit.org/ianding1/leetcode.vim',{'on':['LeetCodeList','LeetCodeSignIn']}
 Plug 'https://hub.fastgit.org/liuchengxu/vista.vim'
+Plug 'https://hub.fastgit.org/yggdroot/indentLine', {'for':['go', 'c', 'cpp', 'java', 'sh', 'raket']}
 call plug#end()
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
