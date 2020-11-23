@@ -1,6 +1,8 @@
 [Hotkey]
 # 反复按切换键时进行轮换
 EnumerateWithTriggerKeys=True
+# 轮换输入法时跳过第一个输入法
+EnumerateSkipFirst=False
 
 [Hotkey/TriggerKeys]
 0=Control+Shift+Control_L
@@ -56,4 +58,6 @@ DefaultPageSize=5
 EnabledAddons=
 # Force Disabled Addons
 DisabledAddons=
+# Preload input method to be used by default
+PreloadInputMethod=True
 

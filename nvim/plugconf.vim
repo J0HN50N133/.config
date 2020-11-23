@@ -84,12 +84,15 @@ hi! SpellRare gui=undercurl guisp=magenta
 "|  _| | (_) | (_| | |_| ||  __/ |  | | | | | |"
 "|_| |_|\___/ \__,_|\__|\__\___|_|  |_| |_| |_|"
 """"""""""""""""""""""""""""""""""""""""""""""""
-                                              
 
+hi Floaterm guibg=black
+hi FloatermBorder guibg=none guifg=cyan
+
+let g:floaterm_position = 'center'
+let g:floaterm_wintype = 'floating'
 let g:floaterm_keymap_new = '<leader>sn'
 let g:floaterm_keymap_kill = '<leader>sk'
 let g:floaterm_keymap_toggle = '<leader>st'
-noremap <leader>sr :FloatermNew ranger $PWD<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                                      _   _             
@@ -126,3 +129,4 @@ let g:leetcode_hide_paid_only = 1
 """""""""""""""""""""""""""
 "let g:vista_default_executive = 'coc'
 let g:vista_echo_cursor = 0
+
