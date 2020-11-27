@@ -292,7 +292,10 @@ gaps inner 8
 default_border normal 3 
 hide_edge_borders smart_no_gaps
 smart_gaps on
+<<<<<<< HEAD
 smart_gaps inverse_outer
+=======
+>>>>>>> 9e51854e6a27380889842d65a539bf751bf58cb4
 smart_borders on
 smart_borders no_gaps
 show_marks yes
