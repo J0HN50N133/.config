@@ -32,6 +32,7 @@ exec_always --no-startup-id ~/.config/i3/tap-to-click.sh
 exec --no-startup-id xset dpms 600
 exec_always --no-startup-id sleep 1;$HOME/MyScript/autoScreenMode
 exec_always --no-startup-id sleep 10;$HOME/MyScript/wallpaper_autochagne.sh
+exec_always --no-startup-id sleep 500;$HOME/MyScript/setkey
 # exec_always --no-startup-id sleep 2;variety
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
@@ -71,7 +72,7 @@ bindsym $win+r --release exec --no-startup-id alacritty -e ranger
 #use rofi to manage windows
 bindsym $mod+w exec --no-startup-id rofi -show window
 #start timetable
-bindsym $win+t  exec --no-startup-id feh ~/图片/课表.png	
+bindsym $win+t  exec --no-startup-id cat ~/文档/课程表 | rofi -dmenu 
 #start calutor
 bindcode 148 exec --no-startup-id gnome-calculator
 #start a Firefox
@@ -148,7 +149,7 @@ bindsym $mod+e layout toggle split
 bindsym $mod+Shift+space floating toggle
 
 # change focus between tiling / floating windows
-bindsym $win+space focus mode_toggle
+bindsym $mod+space focus mode_toggle
 
 # focus the parent container
 bindsym $mod+shift+a focus parent
@@ -288,10 +289,12 @@ mode "fuo" {
 
 gaps outer 4
 gaps inner 8
-#smart_borders on
 default_border normal 3 
-hide_edge_borders vertical
+hide_edge_borders smart_no_gaps
 smart_gaps on
+smart_gaps inverse_outer
+smart_borders on
+smart_borders no_gaps
 show_marks yes
 popup_during_fullscreen smart
 workspace_auto_back_and_forth yes
@@ -302,12 +305,10 @@ bindsym $mod+minus scratchpad show
 
 for_window [window_role="pop-up"] floating enable
 for_window [window_role="task_dialog"] floating enable
-#for_window [title="桌面 — Plasma"] kill; floating enable; border none
 for_window [class="startdict"] floating enable;
 for_window [class="plasmashell"] floating enable;
 for_window [class="Plasma"] floating enable; border none
 for_window [title="plasma-desktop"] floating enable; border none
-for_window [title="win7"] floating enable; border none
 for_window [title="feh"] floating enable; border none
 for_window [class="krunner"] floating enable; border none
 for_window [class="Kmix"] floating enable; border none

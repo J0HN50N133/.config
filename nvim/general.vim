@@ -9,35 +9,32 @@
 syntax enable
 syntax on
 set nu rnu
+set autochdir
+set hidden
 set termguicolors
-set expandtab
-set softtabstop
+set softtabstop=-1
+set shiftwidth=8
 set ts=8
-set sw=8
+set expandtab
+set smarttab
+set smartindent
+set autoindent
+filetype plugin indent on
+
 set mouse=a
 set mousehide
 set wildmenu
-set smarttab
-set smartindent
 set encoding=utf-8
-set ai "Auto indent
-set si "Smart indent
 set wrap "Wrap line
-filetype plugin indent on
 "外部文件改变自动读取
 set autoread
 au FocusGained,BufEnter * checktime
-set so=7
 "wildmenu忽略中间文件
 set wildignore=*.o,*~
 set ruler
 set t_Co=256
 set cursorline cursorcolumn
-if has("win16") || has("win32")
-  set wildignore+=.git\*,.hg\*,.svn\*
-else
-  set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.DS_Store
-endif
+set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.DS_Store
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -52,3 +49,31 @@ endif
 """"""""""""""""""""""""
 
 nnoremap <silent><Leader><Leader> /<++><CR>:nohlsearch<CR>ca<
+
+
+""""""" auto fcitx """""""
+
+let g:input_toggle = 1
+function! Fcitx2en()
+   let s:input_status = system("fcitx5-remote")
+   if s:input_status == 2
+      let g:input_toggle = 1
+      let l:a = system("fcitx5-remote -c")
+   endif
+endfunction
+
+function! Fcitx2zh()
+   let s:input_status = system("fcitx5-remote")
+   if s:input_status != 2 && g:input_toggle == 1
+      let l:a = system("fcitx5-remote -o")
+      let g:input_toggle = 0
+   endif
+endfunction
+
+set ttimeoutlen=150
+"退出插入模式
+autocmd InsertLeave * call Fcitx2en()
+"进入插入模式
+autocmd InsertEnter * call Fcitx2zh()
+
+"##### auto fcitx end ######
