@@ -80,6 +80,7 @@ bindsym $win+b exec --no-startup-id firefox
 bindsym $mod+b exec --no-startup-id google-chrome-stable
 # start a terminal
 bindsym $mod+Return --release exec --no-startup-id kitty
+
 bindsym $win+Return --release exec --no-startup-id alacritty
 # screenshot
 bindcode 107 exec --no-startup-id flameshot
@@ -250,13 +251,13 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 #fuo music
-bindsym $mod+m exec --no-startup-id feeluown 
 assign [class="^FeelUOwn$"] number 10
 no_focus [class="^FeelUOwn$"]
 bindsym $mod+Shift+m mode "fuo"
 mode "fuo" {
 ## Previous song
         bindsym p exec fuo previous
+        bindsym $mod+m exec --no-startup-id feeluown 
 #        bindsym j exec 
 #        bindsym k exec 
 ## next song
@@ -280,7 +281,11 @@ mode "fuo" {
         bindsym Escape mode "default"
 }
 
-
+bindsym $win+Control+n mode "NOP"
+# No operation at all
+mode "NOP"{
+        bindsym $win+Control+n mode "default"
+}
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 #bar {
@@ -292,12 +297,13 @@ gaps inner 8
 default_border normal 3 
 hide_edge_borders smart_no_gaps
 smart_gaps on
-<<<<<<< HEAD
-smart_gaps inverse_outer
-=======
->>>>>>> 9e51854e6a27380889842d65a539bf751bf58cb4
 smart_borders on
 smart_borders no_gaps
+# read 1 character and mark the current window with this character
+bindsym $mod+m exec i3-input -F 'mark %s' -l 1 -P 'Mark: '
+
+# read 1 character and go to the window with the character
+bindsym $mod+g exec i3-input -F '[con_mark="%s"] focus' -l 1 -P 'Goto: '
 show_marks yes
 popup_during_fullscreen smart
 workspace_auto_back_and_forth yes
