@@ -21,6 +21,7 @@ noremap <up> <c-w>+
 noremap <down> <c-w>-
 noremap <left> <c-w><
 noremap <right> <c-w>>
+noremap <F3> :NERDTreeToggle<CR>
 
 map f <Plug>Sneak_s
 map F <Plug>Sneak_S
@@ -74,7 +75,7 @@ if &filetype == 'c'
 elseif &filetype == 'cpp'
   :AsyncRun -mode=term -focus=0 g++ -O3 "%" -Wall -o "%<" -lpthread && time ./"%<"
 elseif &filetype == 'java'
-  :AsyncRun javac "%" && time java "%"
+  :AsyncRun javac "%" && time java "%<"
 elseif &filetype == 'sh'
   :AsyncRun time bash "%"
 elseif &filetype == 'python'
@@ -129,5 +130,3 @@ nmap <Leader>aa <Plug>(coc-calc-result-append)
 nmap <Leader>ar <Plug>(coc-calc-result-replace)
 vmap <Leader>aa <Plug>(coc-calc-result-append)
 vmap <Leader>ar <Plug>(coc-calc-result-replace)
-
-nmap <Leader>f :RnvimrToggle<CR>

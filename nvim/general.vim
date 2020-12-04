@@ -87,3 +87,12 @@ autocmd InsertLeave * call Fcitx2en()
 autocmd InsertEnter * call Fcitx2zh()
 
 "##### auto fcitx end ######
+"
+function! s:get_visual_selection()
+   let [lnum1, col1] = getpos("<")[1:2]
+   let [lnum2, col2] = getpos(">")[1:2]
+   let lines = getline(lnum1, lnum2)
+   let line[-1] = line[-1][:col2 - (&selection == 'inclusive'?1:2)]
+   let lines[0] = lines[0][col1 - 1:]
+   return join(lines, "\n")
+endfunction

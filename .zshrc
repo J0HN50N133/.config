@@ -2,16 +2,15 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/ljx/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 export TERM_ITALICS=true
 export BROWSER="google-chrome-stable"
-export PATH=$PATH:/home/ljx/go/bin/:/home/ljx/MyBin/eclipse/:/home/ljx/MyScript/:/home/ljx/SourceCode/PintOS/pintos/src/utils
+export PATH=$PATH:$HOME/go/bin/:$HOME/MyScript/:$HOME/SourceCode/PintOS/pintos/src/utils:$HOME/.config/t2ec
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-# ZSH_THEME="robbyrussell"
 ZSH_THEME="dogenpunk"
 # ZSH_THEME="agnoster"
 ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" "amuse" "afowler" "agnoster" "amuse" "bira" "candy-kingdom" "cloud" "dogenpunk" "frisk" "funky" "half-life" "intheloop" "jnrowe" "miloshadzic" "mira" "mortalscumbag" "mrtazz" "murilasso" "nanotech" "nicoulaj" "norm")
@@ -139,10 +138,7 @@ alias icat='kitty +kitten icat'
 eval "$(lua $HOME/.config/z_lua/z.lua --init zsh once enhanced)"
 
 #Variables
-export NEMU_HOME=/home/ljx/ics2019/nemu
-export AM_HOME=/home/ljx/ics2019/nexus-am
-export NAVY_HOME=/home/ljx/ics2019/navy-apps
-export GOPATH=/home/ljx/go
+export GOPATH=$HOME/go
 export QT_AUTO_SCREEN_SCALE_FACTOR=1
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
 

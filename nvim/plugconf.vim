@@ -85,14 +85,14 @@ hi! SpellRare gui=undercurl guisp=magenta
 "|_| |_|\___/ \__,_|\__|\__\___|_|  |_| |_| |_|"
 """"""""""""""""""""""""""""""""""""""""""""""""
 
-hi Floaterm guibg=black
-hi FloatermBorder guibg=none guifg=cyan
+"hi Floaterm guibg=black
+"hi FloatermBorder guibg=none guifg=cyan
 
-let g:floaterm_position = 'center'
-let g:floaterm_wintype = 'floating'
-let g:floaterm_keymap_new = '<leader>sn'
-let g:floaterm_keymap_kill = '<leader>sk'
-let g:floaterm_keymap_toggle = '<leader>st'
+"let g:floaterm_position = 'center'
+"let g:floaterm_wintype = 'floating'
+"let g:floaterm_keymap_new = '<leader>sn'
+"let g:floaterm_keymap_kill = '<leader>sk'
+"let g:floaterm_keymap_toggle = '<leader>st'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                                      _   _             

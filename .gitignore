@@ -24,3 +24,10 @@
 !/kitty/
 !/libinput-gestures.conf
 !.zshrc
+!/go
+!/gocode
+!/neofetch
+!/Optimus\ Manager
+!/rofi
+!/yarn
+

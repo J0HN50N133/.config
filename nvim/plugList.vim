@@ -10,9 +10,10 @@ Plug 'https://hub.fastgit.org/SirVer/ultisnips' | Plug 'https://hub.fastgit.org/
 Plug 'https://hub.fastgit.org/tpope/vim-surround'
 Plug 'https://hub.fastgit.org/tpope/vim-unimpaired'
 Plug 'https://hub.fastgit.org/tpope/vim-speeddating'
+Plug 'https://hub.fastgit.org/preservim/nerdtree'
 "Plug 'https://hub.fastgit.org/dhruvasagar/vim-table-mode'
 
-Plug 'https://hub.fastgit.org/voldikss/vim-floaterm'
+"Plug 'https://hub.fastgit.org/voldikss/vim-floaterm'
 Plug 'https://hub.fastgit.org/justinmk/vim-sneak'
 Plug 'https://hub.fastgit.org/preservim/nerdcommenter'
 Plug 'https://hub.fastgit.org/ludovicchabant/vim-gutentags'
@@ -21,7 +22,6 @@ Plug 'https://hub.fastgit.org/skywind3000/vim-preview'
 Plug 'https://hub.fastgit.org/jiangmiao/auto-pairs'
 Plug 'https://hub.fastgit.org/roxma/nvim-yarp'
 Plug 'https://hub.fastgit.org/ervandew/supertab'
-Plug 'https://hub.fastgit.org/kevinhwang91/rnvimr',{'on':'RnvimrToggle', 'branch':'main'}
 Plug 'https://hub.fastgit.org/gcmt/wildfire.vim'
 Plug 'https://hub.fastgit.org/mg979/vim-visual-multi'
 
